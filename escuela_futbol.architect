@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>escuela_futbol</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+  <data-source id="DS2">
+   <property key="Connection Type" value="PostgreSQL" />
+   <property key="Logical" value="escuela_futbol" />
+   <property key="JDBC URL" value="jdbc:postgresql://localhost:5432/escuela_futbol" />
+   <property key="UID" value="postgres" />
+   <property key="PWD" value="2311" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" UUID="f7923c2a-b3b0-4733-8d6c-822f2fd77fdb" dbcs-ref="DS2" name="escuela_futbol" physicalName="escuela_futbol" >
+   <catalog id="CAT1" populated="true" UUID="b6a6f3a4-c4c7-443a-91ff-85986c6acd1a" name="escuela_futbol" nativeTerm="database" physicalName="escuela_futbol" >
+    <schema id="SCH2" populated="false" UUID="72edd6d2-6336-490d-9d99-d2d7a2117f80" name="information_schema" nativeTerm="schema" physicalName="information_schema" >
+    </schema>
+    <schema id="SCH3" populated="false" UUID="e1a02fe8-2d98-4a1c-bc7b-7d110fb437c8" name="pg_catalog" nativeTerm="schema" physicalName="pg_catalog" >
+    </schema>
+    <schema id="SCH4" populated="false" UUID="dc53747b-3320-44b2-a2e0-ed27b55f0d1d" name="public" nativeTerm="schema" physicalName="public" >
+    </schema>
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB6" populated="true" UUID="55686b67-ea02-4d09-8669-ea2ca9546812" name="historia_medica_atleta" objectType="TABLE" physicalName="historia_medica_atleta" >
+   <remarks></remarks>
+   <folder id="FOLTAB61" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL7" populated="true" UUID="8abc48bf-b635-4508-b97f-00ecd2f9fc2b" autoIncrement="true" autoIncrementSequenceName="historia_medica_atleta_id_historia_medica_atleta_seq" defaultValue="" name="id_historia_medica_atleta" nullable="0" physicalName="id_historia_medica_atleta" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="7f93e8cb-f283-4422-9993-417a65eb2917" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_id_atleta_seq" defaultValue="" name="id_atleta" nullable="1" physicalName="id_atleta" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="9944a60e-adfe-49d2-9d77-669795d60a3a" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_Fecha_ingreso_seq" defaultValue="" name="fecha_ingreso" nullable="0" physicalName="fecha_ingreso" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="a8b12d6b-1468-4f2c-ab5c-6de2e2e2d2ee" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_tratamiento_seq" defaultValue="" name="tratamiento" nullable="0" physicalName="tratamiento" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="b37c106b-4119-470d-8eb8-6a95f314e1c4" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_tiempo_reposo_seq" defaultValue="" name="tiempo_reposo" nullable="0" physicalName="tiempo_reposo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="069f7504-1822-45ff-a57f-f9ddccd8d09f" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_fecha_egreso_seq" defaultValue="" name="fecha_egreso" nullable="0" physicalName="fecha_egreso" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="f0a521e9-3a5c-4a7b-8c3d-e3a6acf3aa4b" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_hora_ingreso_seq" defaultValue="" name="hora_ingreso" nullable="0" physicalName="hora_ingreso" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="c4fc0820-adbc-426d-92db-e9a90a769607" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_Medico_guardia _seq" defaultValue="" name="medico_guardia " nullable="0" physicalName="medico_guardia " precision="250" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="1529c975-6215-49b0-b738-3a49a8908214" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_hora_egreso _seq" defaultValue="" name="hora_egreso " nullable="0" physicalName="hora_egreso " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="2ef18793-5d32-4229-941f-a598fcce7784" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_notas_seq" defaultValue="" name="notas" nullable="0" physicalName="notas" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="013c9740-7c68-45ee-9981-5c4c55e79122" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_Reposo_seq" defaultValue="" name="Reposo" nullable="0" physicalName="Reposo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="317b8016-00db-4799-b421-42ae34eeb126" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_diagnostico _seq" defaultValue="" name="diagnostico " nullable="0" physicalName="diagnostico " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB63" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB62" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB64" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX19" populated="true" UUID="6cba22eb-2611-418e-b37c-c8b735890e7d" clustered="false" name="historia_medica_atleta_pk" physicalName="historia_medica_atleta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC20" populated="true" UUID="dcbb7855-4a0d-4782-a9b0-ebb14720cb3d" ascendingOrDescending="UNSPECIFIED" column-ref="COL7" name="id_historia_medica_atleta" physicalName="id_historia_medica_atleta" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB21" populated="true" UUID="0c69bd2e-5aff-46ec-a8a8-f589ff224e6a" name="atleta " objectType="TABLE" physicalName="atleta " >
+   <remarks></remarks>
+   <folder id="FOLTAB211" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL22" populated="true" UUID="5f871471-22dc-4b0d-b2e5-c61cf89393f8" autoIncrement="true" autoIncrementSequenceName="atleta _id_atleta_seq" defaultValue="" name="id_atleta" nullable="0" physicalName="id_atleta" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="24ebed72-dc50-40f4-af9b-cedeb74cbfea" autoIncrement="false" autoIncrementSequenceName="atleta _id_historia_medica_atleta_seq" defaultValue="" name="id_historia_medica_atleta" nullable="0" physicalName="id_historia_medica_atleta" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="1aeb6b63-b263-428d-9d1c-33d7e7a492c7" autoIncrement="false" autoIncrementSequenceName="atleta _id_historial_ascenso_atleta_seq" defaultValue="" name="id_historial_ascenso_atleta" nullable="0" physicalName="id_historial_ascenso_atleta" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="b1cd7fe6-eed0-4591-82e4-11dbf5d9dbc1" autoIncrement="false" autoIncrementSequenceName="atleta _id_equipo_seq" defaultValue="" name="id_equipo" nullable="0" physicalName="id_equipo" precision="0" primaryKeySeq="3" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="d90cb4a5-b34b-4f63-b1ce-2e3ca1908da8" autoIncrement="false" defaultValue="" name="id_torneo" nullable="0" physicalName="id_torneo" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="76429190-9c80-4eb6-b5ec-59801adc77c0" autoIncrement="false" defaultValue="" name="id_categoria" nullable="0" physicalName="id_categoria" precision="0" primaryKeySeq="5" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="70890b6c-05b9-4949-b4a2-e375fe394167" autoIncrement="false" autoIncrementSequenceName="categoria_id_tipo_categoria_seq" defaultValue="" name="id_tipo_categoria" nullable="0" physicalName="id_tipo_categoria" precision="0" primaryKeySeq="6" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="9210aa69-257a-4086-9e3e-7c9057933d9b" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _id_datos_personales_seq" defaultValue="" name="Datos_Personales _id_datos_personales" nullable="0" physicalName="Datos_Personales _id_datos_personales" precision="0" primaryKeySeq="7" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="8c5dbc6a-bb5a-488f-abd5-edf577d22629" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _id_datos_personales_seq" defaultValue="" name="id_representantes" nullable="0" physicalName="id_representantes" precision="0" primaryKeySeq="8" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="01555cf4-de37-4fce-b2fc-e2a48bd80dc5" autoIncrement="false" autoIncrementSequenceName="atleta _id_datos_personales_seq" defaultValue="" name="id_datos_personales" nullable="0" physicalName="id_datos_personales" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="2aef85ca-c824-4917-a99f-1fd059dc5c19" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_altura_seq" defaultValue="" name="altura" nullable="0" physicalName="altura" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="0d0e82a5-9657-42b2-8a6e-82beb493f191" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_peso_seq" defaultValue="" name="peso" nullable="0" physicalName="peso" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="6fba3e0d-d1f0-4b43-8583-26813b1e844c" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_fecha_nacimiento_seq" defaultValue="" name="fecha_nacimiento" nullable="0" physicalName="fecha_nacimiento" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="c884f92a-7b32-4a8b-9372-715b34a48b1c" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_equipo_actual_seq" defaultValue="" name="equipo_actual" nullable="0" physicalName="equipo_actual" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="80914169-eac9-4f5a-8043-e8523601c93a" autoIncrement="false" autoIncrementSequenceName="atleta _Pierna Dominante_seq" defaultValue="" name="Pierna Dominante" nullable="0" physicalName="Pierna Dominante" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="762186eb-61df-47b6-8cd0-cf2209400e9e" autoIncrement="false" autoIncrementSequenceName="historia_medica_atleta_posicion_juego_seq" defaultValue="" name="posicion_juego" nullable="0" physicalName="posicion_juego" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="87e3bbe3-12c3-4334-852f-b01f7fd545b1" autoIncrement="false" autoIncrementSequenceName="atleta _horario_pratica_seq" defaultValue="" name="horario_pratica" nullable="0" physicalName="horario_pratica" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="ca18cf69-ed62-4a15-9d74-a16032662f78" autoIncrement="false" autoIncrementSequenceName="atleta _categoria_seq" defaultValue="" name="categoria" nullable="0" physicalName="categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB213" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB212" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB214" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX40" populated="true" UUID="9b704603-47c4-4237-aa86-024ce6ac692e" clustered="false" name="atleta_pk" physicalName="atleta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC41" populated="true" UUID="3d84aa96-fa3b-4f61-8487-5db2ffb65640" ascendingOrDescending="UNSPECIFIED" column-ref="COL22" name="id_atleta" physicalName="id_atleta" />
+     <index-column id="IDC42" populated="true" UUID="a7128876-2274-48d1-9faa-54dfe637e529" ascendingOrDescending="UNSPECIFIED" column-ref="COL23" name="id_historia_medica_atleta" physicalName="id_historia_medica_atleta" />
+     <index-column id="IDC43" populated="true" UUID="2a9ea886-1f31-43ce-9a74-46d1aa515ee3" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="id_historial_ascenso_atleta" physicalName="id_historial_ascenso_atleta" />
+     <index-column id="IDC44" populated="true" UUID="a1b91542-3f44-415f-ac7f-e4a77fe263d6" ascendingOrDescending="UNSPECIFIED" column-ref="COL25" name="id_equipo" physicalName="id_equipo" />
+     <index-column id="IDC45" populated="true" UUID="ab7a8355-2378-436b-bc39-f6666930bdac" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="id_torneo" physicalName="id_torneo" />
+     <index-column id="IDC46" populated="true" UUID="656b0f74-85df-4ac3-9633-72e98839b558" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="id_categoria" physicalName="id_categoria" />
+     <index-column id="IDC47" populated="true" UUID="f53affca-8a6c-4c55-9e12-65ef945e15fe" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="id_tipo_categoria" physicalName="id_tipo_categoria" />
+     <index-column id="IDC48" populated="true" UUID="d39c0d32-6015-42f9-b1f0-a4c40af19d1f" ascendingOrDescending="UNSPECIFIED" column-ref="COL29" name="Datos_Personales _id_datos_personales" physicalName="Datos_Personales _id_datos_personales" />
+     <index-column id="IDC49" populated="true" UUID="8f75def5-72d8-4221-b3a8-c862173f2daa" ascendingOrDescending="UNSPECIFIED" column-ref="COL30" name="id_representantes" physicalName="id_representantes" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB50" populated="true" UUID="762787a3-baf4-4e09-8a13-a296f3461f3e" name="historial_ascenso_atleta" objectType="TABLE" physicalName="historial_ascenso_atleta" >
+   <remarks></remarks>
+   <folder id="FOLTAB501" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL51" populated="true" UUID="1b2d010d-a3a3-4e93-8124-106654536d1e" autoIncrement="true" autoIncrementSequenceName="historial_ascenso_atleta_id_historial_ascenso_atleta_seq" defaultValue="" name="id_historial_ascenso_atleta" nullable="0" physicalName="id_historial_ascenso_atleta" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="e9f21815-79f1-4d44-86aa-75123ca0d014" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_id_atleta_seq" defaultValue="" name="id_atleta" nullable="0" physicalName="id_atleta" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="6a571e40-49be-4a05-acfb-6cd71ae5c49b" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_Fecha_ingreso_academia _seq" defaultValue="" name="fecha_ingreso_academia " nullable="0" physicalName="fecha_ingreso_academia " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="50cfa950-3a59-4387-9c24-22697f311979" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_fecha_ingreso_equipo_seq" defaultValue="" name="fecha_ingreso_equipo" nullable="0" physicalName="fecha_ingreso_equipo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="ae9bc782-6253-42ff-9471-a5bac643d80e" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_New Column_seq" defaultValue="" name="categoria_Inicial" nullable="0" physicalName="categoria_Inicial" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="981c9a4b-23e2-455b-860d-c95c317c48cc" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_posicion_anterior _seq" defaultValue="" name="posicion_anterior " nullable="0" physicalName="posicion_anterior " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL57" populated="true" UUID="e2604e18-e5d0-40e3-90e0-477c42184d4d" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_Tiempo_categoria_seq" defaultValue="" name="tiempo_categoria" nullable="0" physicalName="tiempo_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL58" populated="true" UUID="6fc8b3cf-6122-45bc-a058-be2f5a2809c4" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_tiempo_equipo_seq" defaultValue="" name="tiempo_equipo" nullable="0" physicalName="tiempo_equipo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL59" populated="true" UUID="01ab79d2-44ba-426f-8a1d-fb895ed24652" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_fecha_ascenso_categoria_seq" defaultValue="" name="fecha_ascenso_categoria" nullable="0" physicalName="fecha_ascenso_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="03eeb746-8427-4035-9226-896acc0f14ba" autoIncrement="false" autoIncrementSequenceName="historial_ascenso_atleta_fecha_ascenso_equipo _seq" defaultValue="" name="fecha_ascenso_equipo " nullable="0" physicalName="fecha_ascenso_equipo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB503" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB502" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB504" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX61" populated="true" UUID="06b97fcd-dcec-439d-9c2a-36da92693430" clustered="false" name="historial_ascenso_atleta_pk" physicalName="historial_ascenso_atleta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC62" populated="true" UUID="43726b30-7aef-4138-b223-4af471f6c1ae" ascendingOrDescending="UNSPECIFIED" column-ref="COL51" name="id_historial_ascenso_atleta" physicalName="id_historial_ascenso_atleta" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB63" populated="true" UUID="1878cc91-7c09-4597-9ed1-77eff067eac8" name="equipo" objectType="TABLE" physicalName="equipo" >
+   <remarks></remarks>
+   <folder id="FOLTAB631" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL64" populated="true" UUID="c9129b98-c5df-40bb-a5ac-2b185cd40da4" autoIncrement="true" autoIncrementSequenceName="equipo_id_equipo_seq" defaultValue="" name="id_equipo" nullable="0" physicalName="id_equipo" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL65" populated="true" UUID="073ea82a-a655-45c2-a4e1-27a4f0a1056a" autoIncrement="false" autoIncrementSequenceName="id_torneo_seq" defaultValue="" name="id_torneo" nullable="0" physicalName="id_torneo" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL66" populated="true" UUID="068cfcde-469c-4f24-a9d8-0d9484c7075d" autoIncrement="false" autoIncrementSequenceName="id_categoria_seq" defaultValue="" name="id_categoria" nullable="0" physicalName="id_categoria" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL67" populated="true" UUID="b740663e-9e73-4a10-89c9-67c7436228c9" autoIncrement="false" autoIncrementSequenceName="categoria_id_tipo_categoria_seq" defaultValue="" name="id_tipo_categoria" nullable="0" physicalName="id_tipo_categoria" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL68" populated="true" UUID="539c5d33-7d4e-4103-b637-735beff52bf2" autoIncrement="false" autoIncrementSequenceName="id_profesores_seq" defaultValue="" name="id_profesores" nullable="0" physicalName="id_profesores" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL69" populated="true" UUID="5e210ca1-6653-4df7-9606-d7e89876b6b3" autoIncrement="false" autoIncrementSequenceName="equipo_nombre_equipo_seq" defaultValue="" name="nombre_equipo" nullable="0" physicalName="nombre_equipo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL70" populated="true" UUID="5089f799-57dc-44f7-825c-9ef452dca131" autoIncrement="false" autoIncrementSequenceName="equipo_numero_total_atletas_seq" defaultValue="" name="numero_total_atletas" nullable="0" physicalName="numero_total_atletas" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL71" populated="true" UUID="6a4252c2-5c90-412c-ad23-bb607028cc3d" autoIncrement="false" autoIncrementSequenceName="equipo_numero_atletas_activos_seq" defaultValue="" name="numero_atletas_activos" nullable="0" physicalName="numero_atletas_activos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL72" populated="true" UUID="5135532c-60d1-48d6-b927-6b74c35691b3" autoIncrement="false" autoIncrementSequenceName="equipo_numero_atletas_inativos _seq" defaultValue="" name="numero_atletas_inativos " nullable="0" physicalName="numero_atletas_inativos " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL73" populated="true" UUID="34f27310-b595-49b6-97f7-1304ccd27e73" autoIncrement="false" autoIncrementSequenceName="equipo_director_tecnico _seq" defaultValue="" name="director_tecnico " nullable="0" physicalName="director_tecnico " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL74" populated="true" UUID="de629b1e-61e1-472f-80d3-125668eb6836" autoIncrement="false" autoIncrementSequenceName="equipo_entrenador_seq" defaultValue="" name="entrenador" nullable="0" physicalName="entrenador" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL75" populated="true" UUID="4f6d7d59-6b2d-4d67-a37e-fc344b783a37" autoIncrement="false" autoIncrementSequenceName="equipo_auxiliar_entrenador _seq" defaultValue="" name="auxiliar_entrenador " nullable="0" physicalName="auxiliar_entrenador " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL76" populated="true" UUID="a6bfdc84-ce32-4338-9a5e-4e552ae04aaa" autoIncrement="false" autoIncrementSequenceName="equipo_cancha_asignada _seq" defaultValue="" name="cancha_asignada " nullable="0" physicalName="cancha_asignada " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL77" populated="true" UUID="983d99a3-edd6-4168-b0da-b5abdf7ec031" autoIncrement="false" autoIncrementSequenceName="equipo_juegos_ganados_equipo_seq" defaultValue="" name="juegos_ganados_equipo" nullable="0" physicalName="juegos_ganados_equipo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL78" populated="true" UUID="0a70b522-0246-4096-adc5-2014d54f859f" autoIncrement="false" autoIncrementSequenceName="equipo_juegos_perdidos_equipo _seq" defaultValue="" name="juegos_perdidos_equipo " nullable="0" physicalName="juegos_perdidos_equipo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL79" populated="true" UUID="e2547c9e-7482-46c0-bd71-d2c34f71cbbd" autoIncrement="false" autoIncrementSequenceName="equipo_juegos_empatados_equipo _seq" defaultValue="" name="juegos_empatados_equipo " nullable="0" physicalName="juegos_empatados_equipo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB633" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB632" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB634" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX80" populated="true" UUID="6b1396a4-ee58-4847-a1ee-28f2e6a516e2" clustered="false" name="equipo_pk" physicalName="equipo_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC81" populated="true" UUID="876cf0f8-7dd7-426d-9d52-b2c1c113e039" ascendingOrDescending="UNSPECIFIED" column-ref="COL64" name="id_equipo" physicalName="id_equipo" />
+     <index-column id="IDC82" populated="true" UUID="014e5bb3-aa5d-43f6-aadd-b7bedc8cf4db" ascendingOrDescending="UNSPECIFIED" column-ref="COL65" name="id_torneo" physicalName="id_torneo" />
+     <index-column id="IDC83" populated="true" UUID="ec286cca-f927-41b7-96e1-58fb0eab2e69" ascendingOrDescending="UNSPECIFIED" column-ref="COL66" name="id_categoria" physicalName="id_categoria" />
+     <index-column id="IDC84" populated="true" UUID="fdbac53b-f846-471d-8238-cbab406d42e1" ascendingOrDescending="UNSPECIFIED" column-ref="COL67" name="id_tipo_categoria" physicalName="id_tipo_categoria" />
+     <index-column id="IDC85" populated="true" UUID="cc80a90a-2f1d-4345-8f3f-3b73b3d2cd51" ascendingOrDescending="UNSPECIFIED" column-ref="COL68" name="id_profesores" physicalName="id_profesores" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB86" populated="true" UUID="592187ad-8d19-4f2a-b042-4c67f70d7e9f" name="torneo" objectType="TABLE" physicalName="torneo" >
+   <remarks></remarks>
+   <folder id="FOLTAB861" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL87" populated="true" UUID="fb26f30c-fabe-479c-839d-3ed1aa902fa5" autoIncrement="true" autoIncrementSequenceName="torneo_id_torneo_seq" defaultValue="" name="id_torneo" nullable="0" physicalName="id_torneo" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL88" populated="true" UUID="e5744df5-4968-4531-904f-375f496143f6" autoIncrement="false" autoIncrementSequenceName="torneo_id_equipo_seq" defaultValue="" name="id_equipo" nullable="0" physicalName="id_equipo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL89" populated="true" UUID="760825dc-ca7a-44ea-bd16-fe38ae407749" autoIncrement="false" autoIncrementSequenceName="torneo_nombre_torneo_seq" defaultValue="" name="nombre_torneo" nullable="0" physicalName="nombre_torneo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL90" populated="true" UUID="f9c8d9a0-adb3-4b40-9712-e7f515a1f39c" autoIncrement="false" autoIncrementSequenceName="torneo_fecha_inscripcion_torneo _seq" defaultValue="" name="fecha_inscripcion_torneo " nullable="0" physicalName="fecha_inscripcion_torneo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL91" populated="true" UUID="444ae1e9-0630-46f4-95a5-4d5d4f31c573" autoIncrement="false" autoIncrementSequenceName="torneo_fecha_inicio_torneo_seq" defaultValue="" name="fecha_inicio_torneo" nullable="0" physicalName="fecha_inicio_torneo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL92" populated="true" UUID="8dd64e2f-bcc6-4c05-8a7c-e28e3250e2b4" autoIncrement="false" autoIncrementSequenceName="torneo_categorias_inscritas_torneo _seq" defaultValue="" name="categorias_inscritas_torneo " nullable="0" physicalName="categorias_inscritas_torneo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL93" populated="true" UUID="f7111e32-0591-4b36-8318-5398f281445c" autoIncrement="false" autoIncrementSequenceName="torneo_equipos_inscritos_torneo_seq" defaultValue="" name="equipos_inscritos_torneo" nullable="0" physicalName="equipos_inscritos_torneo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL94" populated="true" UUID="5074fdfd-32b8-4574-a213-ae632bde449f" autoIncrement="false" autoIncrementSequenceName="torneo_calendario_juego_seq" defaultValue="" name="calendario_juego" nullable="0" physicalName="calendario_juego" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL95" populated="true" UUID="82e9fa77-cdc0-41a0-83b4-f0d76c689ecd" autoIncrement="false" autoIncrementSequenceName="torneo_posicion_actual_equipo_torneo_seq" defaultValue="" name="posicion_actual_equipo_torneo" nullable="0" physicalName="posicion_actual_equipo_torneo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL96" populated="true" UUID="4ff3e056-2c85-41cf-a865-64f26c46b447" autoIncrement="false" autoIncrementSequenceName="torneo_posicion_final_equipo_torneo _seq" defaultValue="" name="posicion_final_equipo_torneo " nullable="0" physicalName="posicion_final_equipo_torneo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL97" populated="true" UUID="7a2200b9-14e9-45a6-9775-8d12e10671d7" autoIncrement="false" autoIncrementSequenceName="torneo_juegos_ganados_torneo_seq" defaultValue="" name="juegos_ganados_torneo" nullable="0" physicalName="juegos_ganados_torneo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL98" populated="true" UUID="850ee672-cc74-4dbf-a16f-1ad9ae1b82b2" autoIncrement="false" autoIncrementSequenceName="torneo_juegos_perdidos_torneo _seq" defaultValue="" name="juegos_perdidos_torneo " nullable="0" physicalName="juegos_perdidos_torneo " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL99" populated="true" UUID="1c97b280-74bf-42a2-ae2e-d43ffde94b1f" autoIncrement="false" autoIncrementSequenceName="torneo_juegos_empatados_torneo_seq" defaultValue="" name="juegos_empatados_torneo" nullable="0" physicalName="juegos_empatados_torneo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB863" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB862" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB864" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX100" populated="true" UUID="e5ac8442-6876-44e6-8e0a-78dc9c278c54" clustered="false" name="torneo_pk" physicalName="torneo_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC101" populated="true" UUID="7360db22-1268-40d4-a5c7-c4bf69c6dff6" ascendingOrDescending="UNSPECIFIED" column-ref="COL87" name="id_torneo" physicalName="id_torneo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB102" populated="true" UUID="fe6df410-fff7-44ae-b7da-5734a29a3537" name="categoria" objectType="TABLE" physicalName="categoria" >
+   <remarks></remarks>
+   <folder id="FOLTAB1021" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL103" populated="true" UUID="2a363d83-aabd-4141-a971-d13dba7cdade" autoIncrement="true" autoIncrementSequenceName="categoria_id_categoria_seq" defaultValue="" name="id_categoria" nullable="0" physicalName="id_categoria" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL104" populated="true" UUID="1ef71498-edae-4e6b-8d56-f45e14fea839" autoIncrement="false" autoIncrementSequenceName="categoria_id_tipo_categoria_seq" defaultValue="" name="id_tipo_categoria" nullable="0" physicalName="id_tipo_categoria" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL105" populated="true" UUID="d6946746-9c2d-45a7-864f-5e51ccf0ea61" autoIncrement="false" autoIncrementSequenceName="categoria_id_profesores_seq" defaultValue="" name="id_profesores" nullable="0" physicalName="id_profesores" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL106" populated="true" UUID="2e9e1d83-ade0-4e8e-a42b-299b5dcf57eb" autoIncrement="false" autoIncrementSequenceName="categoria_Cantidad_atletas_categoria_seq" defaultValue="" name="Cantidad_atletas_categoria" nullable="0" physicalName="Cantidad_atletas_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL107" populated="true" UUID="664cf7ad-f4c1-47f0-843e-a578fc4b4570" autoIncrement="false" autoIncrementSequenceName="categoria_cantidad_entrenadores_asignados_categoria _seq" defaultValue="" name="cantidad_entrenadores_asignados_categoria " nullable="0" physicalName="cantidad_entrenadores_asignados_categoria " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL108" populated="true" UUID="ebdcb308-7d79-4f9d-8fbf-2c7d4eb23fbd" autoIncrement="false" autoIncrementSequenceName="categoria_cantidad_auxiliares_asignados_categoria _seq" defaultValue="" name="cantidad_auxiliares_asignados_categoria " nullable="0" physicalName="cantidad_auxiliares_asignados_categoria " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL109" populated="true" UUID="bc418fda-73fb-449a-a178-523e630241cc" autoIncrement="false" autoIncrementSequenceName="categoria_juegos_ganados_categoria_seq" defaultValue="" name="juegos_ganados_categoria" nullable="0" physicalName="juegos_ganados_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL110" populated="true" UUID="60998fe2-3251-46a9-ab45-65b1fc371d56" autoIncrement="false" autoIncrementSequenceName="categoria_juegos_perdidos_categoria_seq" defaultValue="" name="juegos_perdidos_categoria" nullable="0" physicalName="juegos_perdidos_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL111" populated="true" UUID="41879762-a85a-482f-b41b-d3f633ba0680" autoIncrement="false" autoIncrementSequenceName="categoria_juegos_empatados_categoria_seq" defaultValue="" name="juegos_empatados_categoria" nullable="0" physicalName="juegos_empatados_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1023" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1022" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1024" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX112" populated="true" UUID="fd09a307-d487-4d18-9a08-7082072b6135" clustered="false" name="categoria_pk" physicalName="categoria_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC113" populated="true" UUID="2c5a89e4-c669-4709-992c-296ea958d397" ascendingOrDescending="UNSPECIFIED" column-ref="COL103" name="id_categoria" physicalName="id_categoria" />
+     <index-column id="IDC114" populated="true" UUID="882024a3-55b2-44af-8282-d84ed3210eab" ascendingOrDescending="UNSPECIFIED" column-ref="COL104" name="id_tipo_categoria" physicalName="id_tipo_categoria" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB115" populated="true" UUID="2f1e5903-802b-42ab-be60-9bc955af77f0" name="Datos_Personales " objectType="TABLE" physicalName="Datos_Personales " >
+   <remarks></remarks>
+   <folder id="FOLTAB1151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL116" populated="true" UUID="da2c8035-8e77-4690-9f28-ffea3b8f7fb7" autoIncrement="true" autoIncrementSequenceName="Datos_Personales _id_datos_personales_seq" defaultValue="" name="id_datos_personales" nullable="0" physicalName="id_datos_personales" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL117" populated="true" UUID="0061db37-ea68-428a-9de0-aae3cff8f696" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _id_datos_personales_seq" defaultValue="" name="id_representantes" nullable="0" physicalName="id_representantes" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL118" populated="true" UUID="654020d3-a026-4d0f-9182-1c95e46c75c5" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _numero_telefonico _seq" defaultValue="" name="numero_telefonico " nullable="0" physicalName="numero_telefonico " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL119" populated="true" UUID="2fc94f87-0316-43e8-a6cb-1bd5be57614e" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _Numero_Casa _seq" defaultValue="" name="numero_casa " nullable="0" physicalName="numero_casa " precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL120" populated="true" UUID="d3c61f8a-021d-43fc-9ea7-4212ea5cace7" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _direccion_seq" defaultValue="" name="direccion" nullable="0" physicalName="direccion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL121" populated="true" UUID="c9f09f90-b712-4ae5-8431-65d5828f5f69" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _nombre_seq" defaultValue="" name="nombre" nullable="0" physicalName="nombre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL122" populated="true" UUID="be2b6d91-d49b-49f6-9cf5-89ead17c2aa8" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _cedula_seq" defaultValue="" name="cedula" nullable="0" physicalName="cedula" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL123" populated="true" UUID="1c063d40-5899-4206-9616-cb67e705e9b3" autoIncrement="false" autoIncrementSequenceName="Datos_Personales _edad_seq" defaultValue="" name="edad" nullable="0" physicalName="edad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1153" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1152" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1154" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX124" populated="true" UUID="e0d21357-fe81-4850-b008-6748cef302a4" clustered="false" name="Datos_Personales_pk" physicalName="Datos_Personales_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC125" populated="true" UUID="bdc3fa53-5887-43ab-8326-75127ed24de1" ascendingOrDescending="UNSPECIFIED" column-ref="COL116" name="id_datos_personales" physicalName="id_datos_personales" />
+     <index-column id="IDC126" populated="true" UUID="917579c9-4023-415f-82b4-399fcb089de9" ascendingOrDescending="UNSPECIFIED" column-ref="COL117" name="id_representantes" physicalName="id_representantes" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB127" populated="true" UUID="b7fff598-7eab-440e-a969-3e56fae7050f" name="representante" objectType="TABLE" physicalName="representante" >
+   <remarks></remarks>
+   <folder id="FOLTAB1271" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL128" populated="true" UUID="e93cb810-ea0d-4b4d-993d-f95a5cebf6e9" autoIncrement="true" autoIncrementSequenceName="representante_id_representantes_seq" defaultValue="" name="id_representantes" nullable="0" physicalName="id_representantes" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL129" populated="true" UUID="8dccfdb2-83b5-43b6-9841-b0a2ace0e39b" autoIncrement="false" autoIncrementSequenceName="representante_id_vehiculo_seq" defaultValue="" name="id_vehiculo" nullable="0" physicalName="id_vehiculo" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL130" populated="true" UUID="463cf5bb-7265-4302-a5dd-dfcc189ad7d9" autoIncrement="false" autoIncrementSequenceName="representante_nombre_seq" defaultValue="" name="nombre" nullable="0" physicalName="nombre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL131" populated="true" UUID="46415923-3a93-4cfc-b5e3-a843f1cecfa0" autoIncrement="false" autoIncrementSequenceName="representante_numero_telefonico_seq" defaultValue="" name="numero_telefonico" nullable="0" physicalName="numero_telefonico" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL132" populated="true" UUID="b8b1c3bc-8105-4065-86f2-2d3a572d106b" autoIncrement="false" autoIncrementSequenceName="representante_numero_trabajo_seq" defaultValue="" name="numero_trabajo" nullable="0" physicalName="numero_trabajo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL133" populated="true" UUID="bcc621b9-b104-4c13-b1de-d2ecbc9b2227" autoIncrement="false" autoIncrementSequenceName="representante_cedula_seq" defaultValue="" name="cedula" nullable="0" physicalName="cedula" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1273" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1274" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX134" populated="true" UUID="9e0f1ed3-fd2b-448c-bb1b-2a54a117a781" clustered="false" name="representante_pk" physicalName="representante_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC135" populated="true" UUID="d303e447-0be9-4fe6-baee-4ff16ff30ddb" ascendingOrDescending="UNSPECIFIED" column-ref="COL128" name="id_representantes" physicalName="id_representantes" />
+     <index-column id="IDC136" populated="true" UUID="f86b544e-fb31-436f-9f79-efb1efb5a48f" ascendingOrDescending="UNSPECIFIED" column-ref="COL129" name="id_vehiculo" physicalName="id_vehiculo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB137" populated="true" UUID="3c43ad38-a3d5-4c06-8acb-885f7f9de074" name="vehiculo" objectType="TABLE" physicalName="vehiculo" >
+   <remarks></remarks>
+   <folder id="FOLTAB1371" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL138" populated="true" UUID="4b863cdf-0407-45ec-aa48-cbffbd1530e0" autoIncrement="true" autoIncrementSequenceName="vehiculo_id_vehiculo_seq" defaultValue="" name="id_vehiculo" nullable="0" physicalName="id_vehiculo" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL139" populated="true" UUID="5d2da16a-9a02-4286-9343-964d774b9e93" autoIncrement="false" autoIncrementSequenceName="vehiculo_placa_seq" defaultValue="" name="placa" nullable="0" physicalName="placa" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL140" populated="true" UUID="a32b01e3-b075-410c-ad67-f1c4067ac4cd" autoIncrement="false" autoIncrementSequenceName="vehiculo_modelo_seq" defaultValue="" name="modelo" nullable="0" physicalName="modelo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL141" populated="true" UUID="84cb8cbb-2731-4920-934d-cc4b09ffd596" autoIncrement="false" autoIncrementSequenceName="vehiculo_marca_seq" defaultValue="" name="marca" nullable="0" physicalName="marca" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL142" populated="true" UUID="66f3cacf-e8bd-4622-9eb7-5bbff6abe9df" autoIncrement="false" autoIncrementSequenceName="vehiculo_color_seq" defaultValue="" name="color" nullable="0" physicalName="color" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1373" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1372" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1374" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX143" populated="true" UUID="d62a4b7b-104e-44f1-a247-106f5a57ded0" clustered="false" name="vehiculo_pk" physicalName="vehiculo_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC144" populated="true" UUID="2641ca22-7d0a-4805-bca3-db358a6bd5be" ascendingOrDescending="UNSPECIFIED" column-ref="COL138" name="id_vehiculo" physicalName="id_vehiculo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB145" populated="true" UUID="ba664e23-f1eb-44e6-a7f6-07bbcfb77432" name="tipo_categoria" objectType="TABLE" physicalName="tipo_categoria" >
+   <remarks></remarks>
+   <folder id="FOLTAB1451" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL146" populated="true" UUID="44fee772-ce6b-4ac9-a9af-7c181c364783" autoIncrement="true" autoIncrementSequenceName="tipo_categoria_id_tipo_categoria_seq" defaultValue="" name="id_tipo_categoria" nullable="0" physicalName="id_tipo_categoria" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL147" populated="true" UUID="1456f3e8-1a73-4b53-9884-925da0f5a6ab" autoIncrement="false" autoIncrementSequenceName="tipo_categoria_tipo_seq" defaultValue="" name="nombre_categoria" nullable="0" physicalName="nombre_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1453" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1452" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1454" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX148" populated="true" UUID="406d7e3a-8e6c-450a-b1ae-e6240aca180d" clustered="false" name="tipo_categoria_pk" physicalName="tipo_categoria_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC149" populated="true" UUID="195c90b9-1528-4436-b37a-5c10185526b0" ascendingOrDescending="UNSPECIFIED" column-ref="COL146" name="id_tipo_categoria" physicalName="id_tipo_categoria" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB150" populated="true" UUID="5b3782b7-1ce1-4e7c-86c6-3893ba480a45" name="profesores" objectType="TABLE" physicalName="profesores" >
+   <remarks></remarks>
+   <folder id="FOLTAB1501" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL151" populated="true" UUID="3385e8f8-802b-420d-b839-cb346d838879" autoIncrement="true" autoIncrementSequenceName="profesores_id_profesores_seq" defaultValue="" name="id_profesores" nullable="0" physicalName="id_profesores" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL152" populated="true" UUID="1563f29f-4b14-4d1e-b785-90a3a3e7ee58" autoIncrement="false" autoIncrementSequenceName="profesores_especialidad_seq" defaultValue="" name="especialidad" nullable="0" physicalName="especialidad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL153" populated="true" UUID="7b8fb4ee-4ef9-4e2b-a6d8-7a7b1f047d9e" autoIncrement="false" autoIncrementSequenceName="profesores_nombre_seq" defaultValue="" name="nombre" nullable="0" physicalName="nombre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL154" populated="true" UUID="3e006112-2c13-48da-a464-13b989c5280f" autoIncrement="false" autoIncrementSequenceName="profesores_fecha_ingreso_academia_seq" defaultValue="" name="fecha_ingreso_academia" nullable="0" physicalName="fecha_ingreso_academia" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL155" populated="true" UUID="ea7b09dc-567b-4720-a0e2-f855a287bcaf" autoIncrement="false" autoIncrementSequenceName="profesores_equipo_asignado_seq" defaultValue="" name="equipo_asignado" nullable="0" physicalName="equipo_asignado" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL156" populated="true" UUID="e035eac6-be49-4b76-aa2a-afb621787604" autoIncrement="false" autoIncrementSequenceName="profesores_curso_realizado_seq" defaultValue="" name="curso_realizado" nullable="0" physicalName="curso_realizado" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1503" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1502" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1504" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX157" populated="true" UUID="dc386ebe-bbe3-4f01-a61c-2da3d701b122" clustered="false" name="profesores_pk" physicalName="profesores_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC158" populated="true" UUID="301d4be6-cf39-4bae-bbbb-1d99d7b5cee1" ascendingOrDescending="UNSPECIFIED" column-ref="COL151" name="id_profesores" physicalName="id_profesores" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL159" populated="true" UUID="21f730dc-294f-4efd-88e0-efc4fb035e80" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="3" identifying="true" name="historia_medica_atleta_atleta _fk" physicalName="historia_medica_atleta_atleta _fk" pk-table-ref="TAB6" pkCardinality="3" updateRule="3" >
+    <column-mapping id="CMP160" populated="true" UUID="f4334380-ac57-4c27-b26d-8d393427112e" fk-column-ref="COL23" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL7" />
+   </relationship>
+   <relationship id="REL161" populated="true" UUID="2068158b-7f01-4e8d-a20c-f822e7c62c54" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="3" identifying="true" name="historial_ascenso_atleta_atleta _fk" physicalName="historial_ascenso_atleta_atleta _fk" pk-table-ref="TAB50" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP162" populated="true" UUID="086fc379-91e7-4e06-a4fe-e2224e6d1eb3" fk-column-ref="COL24" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL51" />
+   </relationship>
+   <relationship id="REL163" populated="true" UUID="b4594961-ea4e-4036-98ed-1ae70f6e8277" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="7" identifying="true" name="equipo_atleta _fk" physicalName="equipo_atleta _fk" pk-table-ref="TAB63" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP164" populated="true" UUID="f30a1861-5c1d-49b7-a670-21c3d615aa7b" fk-column-ref="COL25" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL64" />
+    <column-mapping id="CMP165" populated="true" UUID="8b85464a-c1e7-40a6-bc6b-1d9f86c6637d" fk-column-ref="COL26" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL65" />
+    <column-mapping id="CMP166" populated="true" UUID="9d611a25-3f70-403a-831c-7147646fca40" fk-column-ref="COL27" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL66" />
+    <column-mapping id="CMP167" populated="true" UUID="1b18845a-0a65-43c1-8a17-aa579f70ebbb" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL67" />
+   </relationship>
+   <relationship id="REL168" populated="true" UUID="3944d572-c64d-49e8-80c7-2cee74cf1476" deferrability="7" deleteRule="3" fk-table-ref="TAB63" fkCardinality="3" identifying="true" name="torneo_equipo_fk" physicalName="torneo_equipo_fk" pk-table-ref="TAB86" pkCardinality="7" updateRule="3" >
+    <column-mapping id="CMP169" populated="true" UUID="19b629a9-9ce0-4de5-84ae-bd44c4560071" fk-column-ref="COL65" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL87" />
+   </relationship>
+   <relationship id="REL170" populated="true" UUID="90984aa3-d2da-4bd9-8207-ec3b12d4c14b" deferrability="7" deleteRule="3" fk-table-ref="TAB63" fkCardinality="7" identifying="true" name="categoria_equipo_fk" physicalName="categoria_equipo_fk" pk-table-ref="TAB102" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP171" populated="true" UUID="359f3e13-d806-4a9f-bd72-989c9fa9196b" fk-column-ref="COL66" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL103" />
+    <column-mapping id="CMP172" populated="true" UUID="c7e4fa2b-bc24-436f-909a-91475de6dd1c" fk-column-ref="COL67" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL104" />
+   </relationship>
+   <relationship id="REL173" populated="true" UUID="bcd3b88b-ecc2-45de-986c-ace8cb6166de" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="7" identifying="true" name="Datos_Personales _atleta _fk" physicalName="Datos_Personales _atleta _fk" pk-table-ref="TAB115" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP174" populated="true" UUID="96c433fc-124f-4b72-ae55-9d3045ffa768" fk-column-ref="COL29" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL116" />
+    <column-mapping id="CMP175" populated="true" UUID="b4b201b4-0549-4270-92c1-2885dae3d7e4" fk-column-ref="COL30" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL117" />
+   </relationship>
+   <relationship id="REL176" populated="true" UUID="ca429707-e0dd-4c2d-ba8a-04b6123ff786" deferrability="7" deleteRule="3" fk-table-ref="TAB115" fkCardinality="7" identifying="true" name="representante_Datos_Personales _fk" physicalName="representante_Datos_Personales _fk" pk-table-ref="TAB127" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP177" populated="true" UUID="fa7e9159-63de-465e-a432-debc912d9fdb" fk-column-ref="COL117" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL128" />
+   </relationship>
+   <relationship id="REL178" populated="true" UUID="fde2a177-ef33-4c0e-b23b-e234f2cfa566" deferrability="7" deleteRule="3" fk-table-ref="TAB127" fkCardinality="7" identifying="true" name="vehiculo_representante_fk" physicalName="vehiculo_representante_fk" pk-table-ref="TAB137" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP179" populated="true" UUID="1bf460df-6676-47c7-b75c-e3227c4f525d" fk-column-ref="COL129" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL138" />
+   </relationship>
+   <relationship id="REL180" populated="true" UUID="08d1536c-892f-4739-a9fd-4efb6176d6a8" deferrability="7" deleteRule="3" fk-table-ref="TAB102" fkCardinality="7" identifying="true" name="tipo_categoria_categoria_fk" physicalName="tipo_categoria_categoria_fk" pk-table-ref="TAB145" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP181" populated="true" UUID="df519c4e-9614-46d6-a1bb-54452b833446" fk-column-ref="COL104" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL146" />
+   </relationship>
+   <relationship id="REL182" populated="true" UUID="b3ff35eb-234c-4d4d-ac82-bf6b1e1b9418" deferrability="7" deleteRule="3" fk-table-ref="TAB63" fkCardinality="7" identifying="true" name="profesores_equipo_fk" physicalName="profesores_equipo_fk" pk-table-ref="TAB150" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP183" populated="true" UUID="4dfa5c42-3415-4594-8f67-e6dfff4ce50b" fk-column-ref="COL68" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL151" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="0.3535533905932735" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB6" x="2712" y="275" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB21" x="1894" y="710" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB50" x="1867" y="8" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB63" x="943" y="1002" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB86" x="1065" y="1837" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB102" x="67" y="1440" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB115" x="2468" y="1537" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB127" x="3021" y="2109" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB137" x="3386" y="1598" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB145" x="6" y="2182" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB150" x="461" y="419" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL159" pkConnection="0.3885350318471338" fkConnection="0.6216216216216216" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL161" pkConnection="0.6068111455108359" fkConnection="0.3538083538083538" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL168" pkConnection="0.7101910828025477" fkConnection="0.22448979591836735" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL170" pkConnection="0.5828571428571429" fkConnection="0.4564459930313589" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL163" pkConnection="0.519163763066202" fkConnection="0.47335423197492166" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL176" pkConnection="0.7322834645669292" fkConnection="0.3018867924528302" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL178" pkConnection="0.5689655172413793" fkConnection="0.42857142857142855" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL173" pkConnection="0.2264808362369338" fkConnection="0.8820638820638821" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL180" pkConnection="0.2798507462686567" fkConnection="0.9045226130653267" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL182" pkConnection="0.4251968503937008" fkConnection="0.03484320557491289" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
